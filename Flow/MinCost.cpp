@@ -48,7 +48,7 @@ struct MinCostMF {
     G[from].push_back((int) edges.size());
     edges.push_back({from, to, fc, 0, cost});
     G[to].push_back((int) edges.size()); 
-    edges.push_back({to, from, bc, 0, cost});
+    edges.push_back({to, from, bc, 0, -cost});
   }
 
   bool expath() {
